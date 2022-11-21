@@ -1,12 +1,12 @@
-public class Cake {
+public abstract class Cake {
     private String name;
-//    private String baseFlavour;
- //   private Boolean glutenFree;
+    private String baseFlavour;
+    private Boolean glutenFree;
 
     public Cake (String name) {
         this.name = name;
-       // this.baseFlavour = baseFlavour;
-      //  this.glutenFree = true;
+        this.baseFlavour = baseFlavour;
+        this.glutenFree = true;
     }
 
     public String getName() {

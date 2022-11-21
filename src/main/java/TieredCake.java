@@ -1,12 +1,13 @@
 public class TieredCake extends Cake {
 
-    private Boolean fondantIcing;
+    protected Boolean fondantIcing;
 
     public  TieredCake (String name, Boolean fondantIcing){
         super(name);
         this.fondantIcing = fondantIcing;
-
-
+    }
+    public String addIcingLettering(){
+        return "Happy 1st Birthday Bob!";
     }
 
 }

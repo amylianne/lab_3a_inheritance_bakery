@@ -10,9 +10,15 @@ public class TieredCakeTest {
     public  void setUp() { tieredCake =new TieredCake("BirthdayCake", true);}
 
     @Test
-    public  void hasFondentIcing(){
+    public  void hasFondantIcing(){
         Boolean expected = true;
-        Boolean actual = tieredCake.fondentIcing();
+        Boolean actual = tieredCake.fondantIcing;
+        assertEquals(expected,actual);
+    }
+    @Test
+    public void canAddIcingLettering(){
+        String expected = "Happy 1st Birthday Bob!";
+        String actual = tieredCake.addIcingLettering();
         assertEquals(expected,actual);
 
     }
