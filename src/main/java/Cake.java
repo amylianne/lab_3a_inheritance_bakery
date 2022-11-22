@@ -1,5 +1,5 @@
 public abstract class Cake {
-    private String name;
+    protected String name;
     private String baseFlavour;
     private Boolean glutenFree;
 
@@ -8,6 +8,9 @@ public abstract class Cake {
         this.baseFlavour = baseFlavour;
         this.glutenFree = true;
     }
+
+    public abstract String addIcingLettering();
+
 
     public String getName() {
         return name;
